@@ -8,21 +8,25 @@ class GPIOPins:
     """Pin assignments for all sensors"""
     
     # === OUTPUTS (LEDs, Buzzers) ===
-    LED = 17       
-    BUZZER = 18              # Passive buzzer
+    LED = 17                 # Single color LED
+    RGB_RED = 12             # RGB LED pins (PWM-capable: 12, 13, 18, 19)
+    RGB_GREEN = 13
+    RGB_BLUE = 18
+    BUZZER = 27              # Passive buzzer
     RELAY = 25               # 5V relay module
     
     # === INPUTS (Buttons, Sensors) ===
-    BUTTON_1 = 2             # General purpose buttons
-    BUTTON_2 = 3
-    BUTTON_3 = 4
+    BUTTON_1 = 4             # General purpose buttons
+    BUTTON_2 = 5
+    BUTTON_3 = 6
     TOUCH = 14               # Touch sensor
     
     PIR_MOTION = 15          # Motion sensor
     PHOTO_RESISTOR = 20      # Light sensor
     
     # === DISTANCE SENSORS ===
-    ULTRASONIC = 21
+    TRIGGER = 23            # Ultrasonic sensor
+    ECHO = 24               # Ultrasonic sensor
     
     # === DIGITAL SENSORS ===
     DHT11_DATA = 16          # Temp/humidity sensor
